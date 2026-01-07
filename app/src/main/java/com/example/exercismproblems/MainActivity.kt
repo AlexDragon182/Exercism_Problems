@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.exercismproblems.PROBLEMS.CollatzCalculator
 import com.example.exercismproblems.PROBLEMS.reverseWithForEach
 import com.example.exercismproblems.ui.theme.ExercismProblemsTheme
 
@@ -26,6 +27,8 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier.padding(innerPadding)
                     )
                     reverseWithForEach("dessert")
+                    CollatzCalculator.computeStepCount(6,null)
+                    CollatzCalculator.computeStepCountGoogle(6)
                 }
             }
         }
