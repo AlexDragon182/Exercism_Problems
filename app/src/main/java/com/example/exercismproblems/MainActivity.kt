@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.exercismproblems.PROBLEMS.CollatzCalculator
+import com.example.exercismproblems.PROBLEMS.Darts
 import com.example.exercismproblems.PROBLEMS.reverseWithForEach
 import com.example.exercismproblems.ui.theme.ExercismProblemsTheme
 
@@ -26,6 +27,8 @@ class MainActivity : ComponentActivity() {
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+                    var score = Darts.score(-0.0,-10.0)
+                    println(score)
                     reverseWithForEach("dessert")
                     CollatzCalculator.computeStepCount(6,null)
                     CollatzCalculator.computeStepCountGoogle(6)
